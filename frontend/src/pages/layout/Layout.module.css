@@ -5,6 +5,7 @@
 }
 
 .header {
+  /* Keeping header black as requested in theme */
   background-color: #000000;
 }
 
@@ -28,7 +29,8 @@
   line-height: 28px;
   display: flex;
   align-items: flex-end;
-  color: #242424;
+  /* Changed to a Light Grey for visibility on black header */
+  color: #e0e0e0;
 }
 
 .headerIcon {
@@ -45,6 +47,7 @@
 }
 
 .shareButton {
+  /* Using a crisp White for icon contrast */
   color: #ffffff;
 }
 
@@ -55,6 +58,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
+  /* Pure White for readability */
   color: #ffffff;
 }
 
@@ -63,8 +67,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #707070;
-  border: 1px solid #d1d1d1;
+  /* Dark Grey text */
+  color: #333333;
+  /* Medium Grey border */
+  border: 1px solid #8a8a8a;
   border-radius: 4px;
 }
 
@@ -76,18 +82,22 @@
   align-items: center;
   padding: 5px 12px;
   gap: 4px;
-  background: #ffffff;
-  border: 1px solid #d1d1d1;
+  /* Changed to a clean Grey-Blue background */
+  background: #f0f2f5;
+  /* Navy Blue border */
+  border: 1px solid #0c336d;
   border-radius: 4px;
 }
 
 .copyButtonContainer:hover {
   cursor: pointer;
-  background: #d1d1d1;
+  /* Hover state changes to a Blue tint */
+  background: #d9e2ec;
 }
 
 .copyButton {
-  color: #424242;
+  /* Navy Blue for the icon */
+  color: #0c336d;
 }
 
 .copyButtonText {
@@ -97,7 +107,8 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #242424;
+  /* Black text for contrast */
+  color: #121212;
 }
 
 @media (max-width: 480px) {

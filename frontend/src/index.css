@@ -1,25 +1,18 @@
+/* index.css */
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 html {
-  background: #f2f2f2;
-  font-family:
-    'Segoe UI',
-    'Segoe UI Web (West European)',
-    'Segoe UI',
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    'Helvetica Neue',
-    sans-serif;
+  /* Changed from #4c56dd to Deep Navy Black */
+  background: #0F172A; 
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -20,13 +20,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(108.78% 108.78% at 50.02% 19.78%, #0c336d 57.29%, #caa5a5 100%);
-  box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 0.14),
-    0px 0px 2px rgba(0, 0, 0, 0.12);
+  /* Deep Black/Grey Gradient */
+  background: radial-gradient(108.78% 108.78% at 50.02% 19.78%, #1E293B 57.29%, #0F172A 100%);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   overflow-y: auto;
-  max-height: calc(100vh - 100px);
 }
 
 .chatEmptyState {
@@ -38,17 +36,11 @@
 }
 
 .chatEmptyStateTitle {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
-  line-height: 24px;
-  margin-top: 36px;
-  margin-bottom: 0px;
+  /* Pure White for visibility */
+  color: #FFFFFF;
 }
-
 .chatEmptyStateSubtitle {
   margin-top: 20px;
   font-style: normal;
@@ -58,7 +50,8 @@
   align-items: flex-end;
   text-align: center;
   letter-spacing: -0.01em;
-  color: #616161;
+  /* Medium Grey */
+  color: #545454;
 }
 
 .chatIcon {
@@ -85,24 +78,11 @@
 }
 
 .chatMessageUserMessage {
-  position: relative;
-  display: flex;
+  background: #0284C7; /* Strong Blue */
+  color: #FFFFFF; /* White text on blue */
+  border-radius: 12px 12px 0px 12px;
   padding: 20px;
-  background: #edf5fd;
-  border-radius: 8px;
-  box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 0.14),
-    0px 0px 2px rgba(0, 0, 0, 0.12);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #242424;
-  order: 0;
-  flex-grow: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  max-width: 80%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .chatMessageGpt {
@@ -114,10 +94,11 @@
 .chatMessageError {
   padding: 20px;
   border-radius: 8px;
+  /* Kept shadow structure but adjusted to a dark muted red/grey */
   box-shadow:
-    rgba(182, 52, 67, 1) 1px 1px 2px,
-    rgba(182, 52, 67, 1) 0px 0px 1px;
-  color: #242424;
+    rgba(80, 0, 0, 1) 1px 1px 2px,
+    rgba(80, 0, 0, 1) 0px 0px 1px;
+  color: #121212;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -161,6 +142,7 @@
   height: 40px;
   left: 7px;
   top: 13px;
+  /* Pure White for icons */
   color: #ffffff;
   border-radius: 4px;
   z-index: 1;
@@ -211,14 +193,16 @@
   height: 32px;
   left: calc(50% - 161px / 2 + 25.8px);
   bottom: 116px;
-  border: 1px solid #d1d1d1;
+  /* Grey border */
+  border: 1px solid #a1a1a1;
   border-radius: 16px;
 }
 
 .stopGeneratingIcon {
   width: 14px;
   height: 14px;
-  color: #424242;
+  /* Dark Grey */
+  color: #333333;
 }
 
 .stopGeneratingText {
@@ -230,30 +214,17 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #242424;
+  /* Black text */
+  color: #121212;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .citationPanel {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 16px 16px;
-  gap: 8px;
-  background: #ffffff;
-  box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 0.14),
-    0px 0px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
-  flex: auto;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0.3;
-  max-width: 30%;
-  overflow-y: scroll;
-  max-height: calc(100vh - 100px);
+  background: #F8FAFC; /* Clean White/Grey */
+  color: #0F172A; /* Dark text */
+  border-left: 1px solid #CBD5E1;
 }
 
 .citationPanelHeaderContainer {
@@ -265,6 +236,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  /* Black text */
   color: #000000;
   flex: none;
   order: 0;
@@ -274,11 +246,13 @@
 .citationPanelDismiss {
   width: 18px;
   height: 18px;
-  color: #424242;
+  /* Dark Grey */
+  color: #333333;
 }
 
 .citationPanelDismiss:hover {
-  background-color: #d1d1d1;
+  /* Lighter grey hover */
+  background-color: #e0e0e0;
   cursor: pointer;
 }
 
@@ -287,7 +261,8 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #323130;
+  /* Darker Grey/Black */
+  color: #202020;
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -302,6 +277,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  /* Pure Black */
   color: #000000;
   flex: none;
   order: 1;
@@ -313,7 +289,8 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  border-bottom: 1px solid #ccc;
+  /* Medium Grey border */
+  border-bottom: 1px solid #b0b0b0;
   margin-top: 12px;
 }
 
@@ -347,12 +324,14 @@ a {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #115ea3;
+  /* Navy Blue for buttons */
+  color: #0c336d;
   flex-direction: row;
   align-items: center;
   padding: 4px 6px;
   gap: 4px;
-  border: 1px solid #d1d1d1;
+  /* Grey border */
+  border: 1px solid #b0b0b0;
   border-radius: 4px;
 }
 
